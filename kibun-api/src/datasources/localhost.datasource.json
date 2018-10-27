@@ -1,0 +1,10 @@
+{
+  "name": "Localhost (PostgreSQL / Docker)",
+  "connector": "postgresql",
+  "url": "postgres://postgres:mysecretpassword@localhost/kibun",
+  "host": "localhost",
+  "port": 5432,
+  "user": "postgres",
+  "password": "mysecretpassword",
+  "database": "kibun"
+}

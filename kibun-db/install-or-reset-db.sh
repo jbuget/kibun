@@ -16,4 +16,4 @@ if [ "$(docker ps -aq -f status=exited -f name=${CONTAINER_NAME})" ]; then
 fi
 
 echo "start container"
-docker run --name ${CONTAINER_NAME} -e POSTGRES_PASSWORD=mysecretpassword -d postgres
+docker run --name ${CONTAINER_NAME} -e POSTGRES_PASSWORD=mysecretpassword -e POSTGRES_DB=kibun -d -p 5432:5432 postgres
