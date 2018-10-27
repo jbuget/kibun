@@ -11,6 +11,7 @@
     "dev:api": "(cd kibun-api && npm run dev)",
     "dev:web": "(cd kibun-web && npm run dev)",
     "install:api": "(cd kibun-api && npm install)",
+    "install:db": "(cd kibun-db && ./install-or-reset-db.sh)",
     "install:web": "(cd kibun-web && npm install)",
     "postinstall": "npm-run-all --parallel install:**",
     "start": "npm-run-all --parallel start:**",
