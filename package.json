@@ -4,8 +4,21 @@
   "description": "Kibun project",
   "main": "index.js",
   "scripts": {
-    "install": "(cd kibun-api && npm install)",
-    "test": "(cd kibun-api && npm test)"
+    "clean": "npm-run-all --parallel clean:**",
+    "clean:api": "(cd kibun-api && rm -rf node_modules)",
+    "clean:web": "(cd kibun-web && rm -rf node_modules)",
+    "dev": "npm-run-all --parallel dev:**",
+    "dev:api": "(cd kibun-api && npm run dev)",
+    "dev:web": "(cd kibun-web && npm run dev)",
+    "install:api": "(cd kibun-api && npm install)",
+    "install:web": "(cd kibun-web && npm install)",
+    "postinstall": "npm-run-all --parallel install:**",
+    "start": "npm-run-all --parallel start:**",
+    "start:api": "(cd kibun-api && npm start)",
+    "start:web": "(cd kibun-web && npm start)",
+    "test": "npm-run-all --parallel test:**",
+    "test:api": "(cd kibun-api && npm test)",
+    "test:web": "(cd kibun-web && npm test)"
   },
   "repository": {
     "type": "git",
@@ -16,5 +29,8 @@
   "bugs": {
     "url": "https://github.com/jbuget/kibun/issues"
   },
-  "homepage": "https://github.com/jbuget/kibun#readme"
+  "homepage": "https://github.com/jbuget/kibun#readme",
+  "devDependencies": {
+    "npm-run-all": "^4.1.3"
+  }
 }
