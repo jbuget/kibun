@@ -33,7 +33,13 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    }
+    },
+
+    /*
+    ** External modules
+    ** https://fr.nuxtjs.org/guide/plugins/#modules-externes
+    */
+    vendor: ['axios']
   }
 }
 
