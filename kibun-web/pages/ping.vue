@@ -1,5 +1,6 @@
 <template>
   <section class="container">
+    <github-corner></github-corner>
     <div>
       <p>Greeting: {{ data.greeting }}</p>
       <p>Date: {{ data.date }}</p>
@@ -9,7 +10,8 @@
 </template>
 
 <script>
-import axios from 'axios';
+import axios from 'axios'
+import GithubCorner from '~/components/GithubCorner.vue'
 
 export default {
   asyncData ({ params }) {
@@ -19,6 +21,9 @@ export default {
         data: res.data
       }
     })
+  },
+  components: {
+    GithubCorner,
   }
 }
 </script>
