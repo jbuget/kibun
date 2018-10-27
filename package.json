@@ -1,0 +1,20 @@
+{
+  "name": "kibun",
+  "version": "1.0.0",
+  "description": "Kibun project",
+  "main": "index.js",
+  "scripts": {
+    "install": "(cd kibun-api && npm install)",
+    "test": "(cd kibun-api && npm test)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbuget/kibun.git"
+  },
+  "author": "Jérémy Buget <jbuget@gmail.com>",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/jbuget/kibun/issues"
+  },
+  "homepage": "https://github.com/jbuget/kibun#readme"
+}
