@@ -10,6 +10,29 @@
       "port": "4200"
     }
   },
+  "ava": {
+    "require": [
+      "babel-register"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^4.19.1",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-vue": "^4.0.0",
+    "jsdom": "^12.2.0"
+  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
@@ -17,17 +40,7 @@
     "heroku-postbuild": "npm run build",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint",
-    "start": "nuxt start"
-  },
-  "dependencies": {
-    "axios": "^0.18.0",
-    "nuxt": "^2.0.0"
-  },
-  "devDependencies": {
-    "babel-eslint": "^10.0.1",
-    "eslint": "^4.19.1",
-    "eslint-friendly-formatter": "^4.0.1",
-    "eslint-loader": "^2.1.1",
-    "eslint-plugin-vue": "^4.0.0"
+    "start": "nuxt start",
+    "test": "ava"
   }
 }
