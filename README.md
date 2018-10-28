@@ -26,4 +26,4 @@ npm run dev
 
 ## Architecture
 
-
+![Kibun architecture schema](https://github.com/jbuget/kibun/blob/master/docs/images/Kibun_Architecture.png)
