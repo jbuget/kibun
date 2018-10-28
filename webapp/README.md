@@ -1,4 +1,4 @@
-# kibun-web
+# webapp
 
 > Nuxt.js project
 

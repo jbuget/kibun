@@ -24,3 +24,6 @@ npm test
 npm run dev
 ```
 
+## Architecture
+
+

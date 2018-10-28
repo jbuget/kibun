@@ -23,7 +23,7 @@ test.before('Init Nuxt.js', async t => {
 test('Route / exits and render HTML', async t => {
   let context = {}
   const { html } = await nuxt.renderRoute('/', context)
-  t.true(html.includes('kibun-web'))
+  t.true(html.includes('webapp'))
 })
 
 // Example of testing via DOM checking
@@ -31,7 +31,7 @@ test('Route / exits and render HTML with CSS applied', async t => {
   const window = await nuxt.renderAndGetWindow('http://localhost:4000/')
   const element = window.document.querySelector('.title')
   t.not(element, null)
-  t.is(element.textContent.trim(), 'kibun-web')
+  t.is(element.textContent.trim(), 'webapp')
 })
 
 // Close the Nuxt server
