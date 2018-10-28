@@ -1,1 +1,1 @@
-export * from './localhost.datasource';
+export * from './postgres.datasource';

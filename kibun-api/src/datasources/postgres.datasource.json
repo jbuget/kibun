@@ -1,5 +1,5 @@
 {
-  "name": "Localhost (PostgreSQL / Docker)",
+  "name": "postgres",
   "connector": "postgresql",
   "url": "postgres://postgres:mysecretpassword@localhost/kibun",
   "host": "localhost",
