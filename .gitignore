@@ -63,3 +63,9 @@ typings/
 # Visual Studio Code
 .history
 kibun.code-workspace
+
+# MacOS X
+.DS_Store
+
+# Temporary files & folders
+tmp

@@ -19,8 +19,7 @@ Kibun is released under the GPL v3 (or later) license, see LICENSE.
 ```
 git clone git@github.com:jbuget/kibun.git
 cd kibun
-npm install
-npm test
+npm run configure
 npm run dev
 ```
 
